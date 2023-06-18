@@ -24,7 +24,7 @@ for i=1:6
 end
 
 %% Pt.2 : Estimating the signal components with the diagonal SS method
-close all
+% close all
 clc
 
 % Initialization
@@ -38,7 +38,7 @@ Initial.Freqs = pi/4*(logspace(-1,0,M));
 [Modal,logMarginal,State,Covariances,Gain] = MO_DSS_JointEKF(y',M,'KS',Initial,HyperPar);
 
 %% Pt.3 : Showing results
-close all
+% close all
 clc
 
 xl = [10 20];
@@ -68,7 +68,7 @@ ylabel('IF [Hz]')
 set(gca,'FontName',FName,'FontSize',FSize)
 
 %%
-close all
+% close all
 clc
 
 xl = [10 20];
@@ -93,7 +93,7 @@ for i=1:n
 end
 
 %%
-close all
+% close all
 clc
 
 xl = [12 14];
@@ -114,7 +114,7 @@ for i=1:M
 end
 
 %%
-close all
+% close all
 clc
 
 figure
